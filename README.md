@@ -22,9 +22,9 @@ Create some projects entries and a single author entry.
 
 Set following environment variables (or use a dotenv file):
 
-- CTF_SPACE_ID : The ID of your Contentful space
-- CTF_ACCESS_TOKEN : Your Contentful access token
-- CTF_AUTHOR_ENTRY_ID : The ID of the author entry
+- CONTENTFUL_SPACE_ID : The ID of your Contentful space
+- CONTENTFUL_ACCESS_TOKEN : Your Contentful access token
+- CONTENTFUL_AUTHOR_ENTRY_ID : The ID of the author entry
 
 ## Build Setup
 

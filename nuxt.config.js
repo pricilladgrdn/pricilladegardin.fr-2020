@@ -76,10 +76,11 @@ export default {
   },
 
   privateRuntimeConfig: {
-    ctfSpaceId: process.env.CTF_SPACE_ID,
-    ctfAccessToken: process.env.CTF_ACCESS_TOKEN,
-    ctfProjectContentType: process.env.CTF_PROJECT_CONTENT_TYPE || 'project',
-    ctfAuthorEntryId: process.env.CTF_AUTHOR_ENTRY_ID,
+    ctfSpaceId: process.env.CONTENTFUL_SPACE_ID,
+    ctfAccessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    ctfProjectContentType:
+      process.env.CONTENTFUL_PROJECT_CONTENT_TYPE || 'project',
+    ctfAuthorEntryId: process.env.CONTENTFUL_AUTHOR_ENTRY_ID,
   },
 
   loading: false,
