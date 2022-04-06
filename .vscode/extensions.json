@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ecmel.vscode-html-css",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "octref.vetur"
+  ]
+}
