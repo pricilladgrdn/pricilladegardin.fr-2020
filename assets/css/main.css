@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply cursor-none m-0 p-0;
+}
+
+html,
+body {
+  @apply h-full w-full font-sans;
+}
+
+@media (hover: hover) {
+  body:before {
+    @apply absolute z-50 top-[length:var(--y)] left-[length:var(--x)] right-0 bottom-0 w-6 h-6 rounded-[50%] translate-x-[-50%] translate-y-[-50%] bg-white mix-blend-difference pointer-events-none content-[''];
+  }
+}
+
+a {
+  @apply mb-[-1px] border-b-[1px] border-black;
+}
+
+::selection {
+  @apply text-white bg-gray-300;
+}
+
+p:not(:first-of-type) {
+  @apply mt-3;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

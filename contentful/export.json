@@ -1,0 +1,626 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4yirfgrzcpd3"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2022-04-01T19:02:12.330Z",
+        "updatedAt": "2022-04-05T16:42:13.340Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2022-04-05T16:42:13.340Z",
+        "firstPublishedAt": "2022-04-01T19:02:12.659Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Project",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": ["bold", "italic", "underline", "code"],
+              "message": "Only bold, italic, underline, and code marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {}
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startYear",
+          "name": "Start year",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "range": {
+                "min": 2000,
+                "max": 2100
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "endYear",
+          "name": "End year",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "range": {
+                "min": 2000,
+                "max": 2100
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sponsor",
+          "name": "Sponsor",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Array",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "backgroundColor",
+          "name": "Background color",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "defaultValue": {
+            "fr-FR": "#FFFFFF"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "textColor",
+          "name": "Text color",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "defaultValue": {
+            "fr-FR": "#000000"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "Images",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "order",
+          "name": "Order",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4yirfgrzcpd3"
+          }
+        },
+        "id": "author",
+        "type": "ContentType",
+        "createdAt": "2022-04-04T18:52:48.824Z",
+        "updatedAt": "2022-04-04T19:16:19.605Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-04-04T19:16:19.605Z",
+        "firstPublishedAt": "2022-04-04T18:52:49.065Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        }
+      },
+      "displayField": "firstName",
+      "name": "Author",
+      "description": "",
+      "fields": [
+        {
+          "id": "firstName",
+          "name": "First name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lastName",
+          "name": "Last name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            },
+            {
+              "regexp": {
+                "pattern": "^\\w[\\w.-]*@([\\w-]+\\.)+[\\w-]+$",
+                "flags": null
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "instagram",
+          "name": "Instagram",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-/]))?$",
+                "flags": null
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "biography",
+          "name": "Biography",
+          "type": "RichText",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": ["bold", "italic", "underline", "code"],
+              "message": "Only bold, italic, underline, and code marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {}
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4yirfgrzcpd3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 26,
+        "createdAt": "2022-04-01T19:02:12.754Z",
+        "createdBy": {
+          "sys": {
+            "id": "5IpRHNdbaPTTtAfyhgdEUG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-04-05T16:42:13.807Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5IpRHNdbaPTTtAfyhgdEUG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "startYear",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "endYear",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sponsor",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundColor",
+          "widgetId": "1cp20SbTMeOi07iopYWCqr",
+          "widgetNamespace": "extension"
+        },
+        {
+          "fieldId": "textColor",
+          "widgetId": "1cp20SbTMeOi07iopYWCqr",
+          "widgetNamespace": "extension"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetGalleryEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4yirfgrzcpd3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2022-04-04T18:52:49.182Z",
+        "createdBy": {
+          "sys": {
+            "id": "5IpRHNdbaPTTtAfyhgdEUG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-04-04T19:16:20.716Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5IpRHNdbaPTTtAfyhgdEUG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "author",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "firstName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "lastName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "instagram",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "biography",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": "fr-FR",
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": true,
+      "sys": {
+        "type": "Locale",
+        "id": "56BbGYs5aJnDe7ajsmQAZk",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4yirfgrzcpd3"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "50ab6851-ddef-4010-82d2-b776b692169d"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "createdAt": "2022-04-01T19:27:12Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "updatedAt": "2022-04-01T19:27:12Z"
+      }
+    },
+    {
+      "name": "French (France)",
+      "code": "fr-FR",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "5MkauKFEUC5Qw2KvyOB3kz",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4yirfgrzcpd3"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "50ab6851-ddef-4010-82d2-b776b692169d"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "createdAt": "2022-04-01T18:52:02Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5IpRHNdbaPTTtAfyhgdEUG"
+          }
+        },
+        "updatedAt": "2022-04-01T19:26:11Z"
+      }
+    }
+  ]
+}
