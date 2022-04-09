@@ -6,10 +6,11 @@
       class="min-w-full"
       :style="{ transform: 'translateX(' + -100 * currentIndex + '%)' }"
     >
-      <nuxt-img
-        class="select-none max-h-full"
-        :src="'https:' + image.fields.file.url"
+      <nuxt-picture
+        class="select-none h-auto max-h-full w-full"
+        :src="image.fields.file.url"
         :alt="image.fields.description"
+        loading="lazy"
       />
     </div>
   </div>
