@@ -45,6 +45,6 @@ Browse [http://localhost:3000](http://localhost:3000)
 
 Set following environment variable:
 
-- GA_TRACKING_ID: Your Google Analytics trackind ID
+- GA_TRACKING_ID: Your Google Analytics tracking ID
 
 Nothing else to do thanks to [nuxt/google-analytics](https://google-analytics.nuxtjs.org/)

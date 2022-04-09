@@ -38,10 +38,11 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/google-analytics',
     '@nuxt/image',
+    'nuxt-compress',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/robots'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
